@@ -20,7 +20,7 @@ export default function HeroSection() {
           </p>
 
           <div className="hero-actions">
-            <a className="button" href="#community">
+            <a className="button" href="#register">
               Join Collegyra
               <span className="button-arrow" aria-hidden="true">→</span>
             </a>

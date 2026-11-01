@@ -1,3 +1,4 @@
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -5,10 +6,12 @@ export default function Footer() {
         <a className="footer-brand" href="/" aria-label="Collegyra home">
           Collegyra
         </a>
-        <p>Build together, grow together, get discovered.</p>
+
+        <p>Build together. Grow together. Get discovered.</p>
+
         <div className="footer-links">
-          <a href="#projects">How it works</a>
-          <a href="#pilot">Join the pilot</a>
+          <a href="#projects">Explore projects</a>
+          <a href="#register">Join the pilot</a>
         </div>
       </div>
     </footer>

@@ -45,7 +45,7 @@ export default function CommunitySection() {
             Open to everyone. Participation in the initial pilot is free.
           </p>
 
-          <a className="button" href="mailto:">
+          <a className="button" href="community">
             Get involved
             <span className="button-arrow" aria-hidden="true">→</span>
           </a>
