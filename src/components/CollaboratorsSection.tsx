@@ -1,22 +1,73 @@
+
+const collaborators = [
+  {
+    initials: "SD",
+    name: "Software Developers",
+    role: "Build applications and technical solutions",
+    skills: ["React", "Next.js", "Python"],
+    color: "profile-green",
+  },
+  {
+    initials: "PD",
+    name: "Product & UI Designers",
+    role: "Turn ideas into useful user experiences",
+    skills: ["UI/UX", "Figma", "Product Design"],
+    color: "profile-blue",
+  },
+  {
+    initials: "AI",
+    name: "AI & Data Enthusiasts",
+    role: "Explore intelligent tools and data-driven ideas",
+    skills: ["AI", "Machine Learning", "Data"],
+    color: "profile-purple",
+  },
+];
+
 export default function CollaboratorsSection() {
   return (
-    <section className="content-section collaborators-section">
+    <section
+      className="content-section collaborators-section"
+      id="collaborators"
+    >
       <div className="container collaborator-layout">
         <div className="section-heading">
-          <p className="eyebrow">Different skills. Shared ambition.</p>
-          <h2>Good teams make room for everyone.</h2>
+          <p className="eyebrow">Meet your future collaborators</p>
+
+          <h2>Find people who help your ideas grow.</h2>
+
           <p className="section-intro">
-            Connect with college students and recent graduates who bring
-            complementary strengths. You don’t need to know everything to get
-            started—curiosity and a willingness to learn count.
+            Connect with developers, designers, researchers, entrepreneurs,
+            and people with different skills. Find teammates, share knowledge,
+            and build something together.
           </p>
+
+          <a className="button" href="#community">
+            Find your collaborators
+            <span className="button-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
-        <div className="skill-cloud" aria-label="Areas of interest">
-          <span className="skill-chip">AI &amp; machine learning</span>
-          <span className="skill-chip">Software development</span>
-          <span className="skill-chip">Product ideas</span>
-          <span className="skill-chip">Technology entrepreneurship</span>
-          <span className="skill-chip">New to building</span>
+
+        <div className="collaborator-profiles">
+          {collaborators.map((person) => (
+            <article className="collaborator-profile" key={person.initials}>
+              <div className={`profile-avatar ${person.color}`}>
+                {person.initials}
+              </div>
+
+              <div className="profile-information">
+                <h3>{person.name}</h3>
+                <p>{person.role}</p>
+
+                <div className="profile-skills">
+                  {person.skills.map((skill) => (
+                    <span className="skill-chip" key={skill}>
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

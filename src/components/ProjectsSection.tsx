@@ -1,30 +1,61 @@
+
 export default function ProjectsSection() {
   return (
     <section className="content-section" id="projects">
       <div className="container">
-        <div className="section-heading centered">
-          <p className="eyebrow">From skills to something real</p>
-          <h2>Learn by making, not just watching.</h2>
+        <div className="section-heading">
+          <p className="eyebrow">Explore collaboration</p>
+          <h2>Turn ideas into real projects.</h2>
           <p className="section-intro">
-            Build practical AI and software projects with a small team. Take a
-            clear role, contribute at your pace, and leave with real experience.
+            Find projects that interest you, bring your skills to the table,
+            and work with others to create something meaningful.
           </p>
         </div>
+
         <div className="feature-grid">
-          <article className="feature-card">
-            <span className="feature-icon" aria-hidden="true">01</span>
-            <h3>Choose a real challenge</h3>
-            <p>Work together on a practical idea your team cares about solving.</p>
+          <article className="feature-card project-feature-card">
+            <span className="feature-icon" aria-hidden="true">
+              <span>01</span>
+            </span>
+            <p className="card-label">Discover</p>
+            <h3>Explore projects</h3>
+            <p>
+              Discover ideas and challenges across software, AI, design,
+              business, research, and more.
+            </p>
+            <a href="#community" className="card-link">
+              Find projects <span aria-hidden="true">→</span>
+            </a>
           </article>
-          <article className="feature-card">
-            <span className="feature-icon" aria-hidden="true">02</span>
-            <h3>Find your role</h3>
-            <p>Make space for different skills, experience levels, and ways to contribute.</p>
+
+          <article className="feature-card project-feature-card">
+            <span className="feature-icon" aria-hidden="true">
+              <span>02</span>
+            </span>
+            <p className="card-label">Collaborate</p>
+            <h3>Build with others</h3>
+            <p>
+              Connect with people who bring different skills and perspectives.
+              Find a team or invite others to join your idea.
+            </p>
+            <a href="#collaborators" className="card-link">
+              Meet collaborators <span aria-hidden="true">→</span>
+            </a>
           </article>
-          <article className="feature-card">
-            <span className="feature-icon" aria-hidden="true">03</span>
-            <h3>Share what you make</h3>
-            <p>Keep a record of the work and contributions you can showcase.</p>
+
+          <article className="feature-card project-feature-card">
+            <span className="feature-icon" aria-hidden="true">
+              <span>03</span>
+            </span>
+            <p className="card-label">Show your work</p>
+            <h3>Build your portfolio</h3>
+            <p>
+              Showcase projects, document your contributions, and give
+              others a clearer picture of what you can do.
+            </p>
+            <a href="#skills" className="card-link">
+              Showcase your skills <span aria-hidden="true">→</span>
+            </a>
           </article>
         </div>
       </div>
