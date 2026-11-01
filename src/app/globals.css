@@ -40,9 +40,11 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 3px solid #e6a84d;
   outline-offset: 4px;
+  border-radius: 6px;
 }
 
 .container {
@@ -141,13 +143,6 @@ a:focus-visible {
 .nav-links a:not(.nav-cta):hover,
 .footer-links a:hover {
   color: var(--green);
-}
-
-.nav-links .nav-cta {
-  padding: 11px 17px;
-  border-radius: 8px;
-  background: var(--green);
-  color: white;
 }
 
 .hero {
@@ -532,7 +527,7 @@ h3 {
   min-height: 220px;
   padding: 25px;
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 16px;
   background: #fffefa;
 }
 
@@ -1066,10 +1061,6 @@ h3 {
     font-size: 0.8rem;
   }
 
-  .nav-links a:nth-child(2) {
-    display: none;
-  }
-
   .nav-links .nav-cta {
     padding: 9px 12px;
   }
@@ -1138,5 +1129,84 @@ h3 {
   *::before,
   *::after {
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Collegyra Registration Section */
+
+.registration-section {
+  padding: 90px 0;
+  background: var(--paper);
+}
+
+.registration-form {
+  max-width: 720px;
+  margin: 40px auto 0;
+  padding: 36px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  display: grid;
+  gap: 20px;
+}
+
+.registration-form h3 {
+  margin: 12px 0 0;
+  color: var(--green-dark);
+}
+
+.registration-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+}
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+.registration-notice {
+  padding: 16px;
+  background: var(--mint);
+  border-radius: 8px;
+  color: var(--green-dark);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.registration-form button:disabled {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #aab8b0;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .registration-section {
+    padding: 60px 0;
+  }
+
+  .registration-form {
+    padding: 22px;
   }
 }

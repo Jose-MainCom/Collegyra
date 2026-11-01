@@ -3,7 +3,7 @@ export default function Navbar() {
   return (
     <header className="site-header">
       <div className="container navbar">
-        <a className="brand" href="/" aria-label="Collegyra home">
+        <a className="brand" href="#home" aria-label="Collegyra home">
           <span className="brand-mark" aria-hidden="true">
             C
           </span>
@@ -20,10 +20,15 @@ export default function Navbar() {
         </nav>
 
         <div className="nav-actions">
-          <a className="nav-login" href="#login">
-            Log in
-          </a>
-          <a className="nav-cta" href="#community">
+          <span className="nav-login" aria-disabled="true">
+            Coming soon
+          </span>
+
+          <a
+            className="nav-cta"
+            href="#register"
+            aria-label="Join the Collegyra community pilot"
+          >
             Join Collegyra
           </a>
         </div>
